@@ -1,3 +1,7 @@
+header {
+  margin-bottom: 20px;
+}
+
 .header_img {
   position: absolute;
   top: 0;
@@ -18,7 +22,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 36px 20px;
+  margin: 10px 20px;
   padding: 16px 10px 16px 32px;
   background-color: rgba(217, 217, 217, 20%);
   backdrop-filter: blur(3px);
@@ -45,23 +49,27 @@
   border-radius: 26px;
 }
 
-.header__logo {
-  width: 56px;
+.header__lista-itens .link-bg:hover,
+.header__lista-itens .link-bg:focus {
+  background-color: #b30000;
+  outline: none;
 }
 
 .header__info {
   display: flex;
   flex-direction: column;
-  margin: 64px 0 0 72px;
+  margin: 26px 0 0 72px;
 }
 
 .header__titulo {
-  font-size: 30px;
+  font-size: 32px;
   font-weight: bold;
-  padding: 4rem;
+  padding: 1rem 0 0 4rem;
 }
 
-.header__destaque {
+.header__titulo img {
+  display: block;
+  margin: 8px 11%;
 }
 
 .header__texto p {
@@ -71,10 +79,29 @@
   margin-left: 72px;
 }
 
-.divisor {
-  max-width: 100%;
+.header__botao {
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
 }
 
-.divisor__img {
-  width: 100%;
+.header__botao button {
+  background-color: red;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 18px 36px;
+  margin-bottom: 3rem;
+  border: none;
+  border-radius: 26px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.header__botao button:hover,
+.header__botao button:focus {
+  background-color: #b30000;
+  transform: translateY(-2px) scale(1.03);
+  outline: none;
 }
