@@ -1,5 +1,5 @@
 header {
-  margin-bottom: 20px;
+  margin-bottom: 6%;
 }
 
 .header_img {
@@ -23,10 +23,11 @@ header {
   justify-content: space-between;
   align-items: center;
   margin: 10px 20px;
-  padding: 16px 10px 16px 32px;
+  padding: 12px 10px;
   background-color: rgba(217, 217, 217, 20%);
   backdrop-filter: blur(3px);
   border-radius: 26px;
+  font-size: 16px;
 }
 
 .header__itens {
@@ -35,24 +36,40 @@ header {
   list-style: none;
 }
 
+.header__logo {
+  width: 80%;
+  padding-left: 10px;
+}
+
 .header__lista-itens a {
   text-decoration: none;
   font-weight: bold;
-  color: #ffffff;
+  color: var(--cor-fonte-secundaria);
 }
 
 .header__lista-itens .link-bg {
-  background-color: red;
-  font-size: 20px;
+  background-color: #b3ded5;
+  font-size: 16px;
   font-weight: bold;
-  padding: 36px 36px;
+  padding: 26px 36px;
   border-radius: 26px;
 }
 
-.header__lista-itens .link-bg:hover,
-.header__lista-itens .link-bg:focus {
-  background-color: #b30000;
-  outline: none;
+.header__lista-itens .link-bg::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: left 0.5s;
+}
+
+.header__lista-itens .link-bg:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px -5px #91afa9;
 }
 
 .header__info {
@@ -65,6 +82,7 @@ header {
   font-size: 32px;
   font-weight: bold;
   padding: 1rem 0 0 4rem;
+  margin: 24px 0;
 }
 
 .header__titulo img {
@@ -82,12 +100,11 @@ header {
 .header__botao {
   display: flex;
   gap: 20px;
-  margin-top: 10px;
+  margin: 10px 0 0 72px;
 }
-
 .header__botao button {
-  background-color: red;
-  color: #fff;
+  background-color: #b3ded5;
+  color: var(--cor-fonte-secundaria);
   font-size: 20px;
   font-weight: bold;
   padding: 18px 36px;
@@ -99,9 +116,35 @@ header {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
-.header__botao button:hover,
-.header__botao button:focus {
-  background-color: #b30000;
-  transform: translateY(-2px) scale(1.03);
-  outline: none;
+.header__botao button::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: left 0.5s;
+}
+
+.header__botao button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px -5px #91afa9;
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-up {
+  animation: fadeUp 1s ease-out forwards;
+  opacity: 0;
 }

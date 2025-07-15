@@ -12,7 +12,7 @@
   <div class="header_img">
     <img class="header__imagem" src="assest/imgs/header.png" alt="" />
   </div>
-  <header class="header">
+  <header class="header" id="home">
 
     <div class="header__lista">
       <div class="logo">
@@ -20,13 +20,13 @@
       </div>
       <li class="header__itens">
         <ul class="header__lista-itens">
-          <a href="">Home</a>
+          <a href="#home">Home</a>
         </ul>
         <ul class="header__lista-itens">
-          <a href="">Explore o recurso</a>
+          <a href="#explore">Explore o recurso</a>
         </ul>
         <ul class="header__lista-itens">
-          <a href="" class="link-bg">Faça Parte</a>
+          <a href="#formulario" class="link-bg">Faça Parte</a>
         </ul>
       </li>
     </div>
@@ -43,7 +43,7 @@
       <div class="header__texto fade-up" style="animation-delay: 0.3s">
         <p>
           O novo app para encontrar, comparar e agendar os melhores serviços para seu pet
-          em Curitiba e região Metropolitana. Simples, rápido e seguro.
+          em Curitiba e região Metropolitana. Simples, rápido e seguro. Embreve no seu celular!
 
         </p>
         <div class="header__botao fade-up" style="animation-delay: 0.6s">
@@ -54,10 +54,10 @@
     </div>
   </header>
   <div class="divisor">
-    <img class="divisor__img" src="assest/imgs/divisor1.png" alt="">
+    <img class="divisor__img" src="assest/imgs/Group 30.png" alt="">
   </div>
 
-  <section class="info">
+  <section class="info" id="explore">
     <div class="info__cuidado">
       <img class="info__img" src="assest/imgs/animais.png " alt="" />
       <div class="info_itens">
@@ -77,7 +77,7 @@
   </section>
 
   <div class="divisor">
-    <img class="divisor__img" src="assest/imgs/divisor2.png" alt="">
+    <img class="divisor__img" src="assest/imgs/divisor de sectiona.png" alt="">
   </div>
   <section class="problemas__solucao">
 
@@ -137,7 +137,7 @@
   </section>
 
 
-  <section class="formulario">
+  <section class="formulario" id="formulario">
     <div class="divisor">
       <img class="divisor__img" src="assest/imgs/divisor3.png" alt="">
     </div>
@@ -146,17 +146,27 @@
 
       <div class="formulario__info">
         <form class="formulario__preencher" action="https://formsubmit.co/roblesthiaguinho@gmail.com" method="POST">
+          <h2>Cadastre-se</h2>
 
-          <select name="Perfil" required>
-            <option value="">Selecione seu perfil</option>
-            <option value="tutor">Sou tutor</option>
-            <option value="petshop">Sou um pet shop</option>
-          </select>
+          <div class="form-group">
+            <select name="Perfil" required>
+              <option value="">Selecione seu perfil</option>
+              <option value="tutor">Sou tutor</option>
+              <option value="petshop">Sou um pet shop</option>
+            </select>
+          </div>
 
-          <input type="text" name="Nome" placeholder="Nome Completo" required />
-          <input type="email" name="Email" placeholder="Seu e-mail" required />
-          <button type="submit">Quero participar</button>
+          <div class="form-group">
+            <input type="text" name="Nome" placeholder="Nome Completo" required />
+          </div>
+
+          <div class="form-group">
+            <input type="email" name="Email" placeholder="Seu e-mail" required />
+          </div>
+
+          <button type="submit" class="botao">Quero participar</button>
         </form>
+
       </div>
 
       <div class="formulario__imagens">
@@ -164,7 +174,8 @@
       </div>
     </div>
   </section>
-
+  <div class="divisor"></div>
+  <img src="assest/imgs/Vector 9.png " alt="" class="divisor__img">
   <!-- <section class="depoimentos">
     <h2>O que os tutores estão dizendo</h2>
     <div class="depoimento">
@@ -185,14 +196,15 @@
     </div>
   </section>  -->
 
-  <!-- <footer>
-    <img src="img/logo-mypet.png" alt="Logo MyPet" class="logo" />
+  <footer class="rodape">
+    <img src="assest/imgs/logoCompleta.png" alt="Logo MyPet" class="rodape__logo" />
     <p>MyPet App © 2025 – Feito com amor em Curitiba.</p>
-    <div class="social">
-      <a href="https://instagram.com/mypet.curitiba" target="_blank">Instagram</a>
-      <a href="https://tiktok.com/@mypetapp" target="_blank">TikTok</a>
+    <div class="rodape__social">
+      <a href="https://instagram.com/conecta_my_pet" target="_blank"><img src="assest/imgs/instagram.png"
+          alt="">Instagram</a>
+      <a href="" target="_blank"><img src="assest/imgs/whatsapp.png" alt="">WhatsApp</a>
     </div>
-  </footer> -->
+  </footer>
 
   <script src="script.js"></script>
 </body>
