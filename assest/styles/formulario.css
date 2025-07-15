@@ -12,6 +12,7 @@
 .formulario__conteudo {
   display: flex;
   gap: 10%;
+  align-items: center;
   justify-content: center;
 }
 .formulario__preencher {

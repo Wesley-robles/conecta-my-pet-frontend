@@ -97,7 +97,7 @@
     <div class="card problema">
       <h3>Dificuldade para comparar serviços</h3>
       <div class="content-wrapper">
-        <img src="assest/imgs/avaliações.png" alt="Ícone" class="icon" />
+        <img src="assest/imgs/avaliacoes.png" alt="Ícone" class="icon" />
         <div class="text-content">
           <p>
             Acesse avaliações reais de outros tutores e compare preços e
@@ -138,42 +138,62 @@
 
 
   <section class="formulario" id="formulario">
-    <div class="divisor">
-      <img class="divisor__img" src="assest/imgs/divisor3.png" alt="">
+  <div class="divisor">
+    <img class="divisor__img" src="assest/imgs/divisor3.png" alt="">
+  </div>
+  <h2>Faça parte da revolução pet</h2>
+  <div class="formulario__conteudo">
+
+    <div class="formulario__info">
+      
+      <form class="formulario__preencher" action="https://formsubmit.co/contato@conectamypet.com.br" method="POST">
+        <h2>Cadastre-se</h2>
+
+        <div class="form-group">
+          <select name="Perfil" required>
+            <option value="">Selecione seu perfil</option>
+            <option value="tutor">Sou tutor</option>
+            <option value="petshop">Sou um pet shop</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <input type="text" name="Nome" placeholder="Nome Completo" required />
+        </div>
+
+        <div class="form-group">
+          <input type="email" name="Email" placeholder="Seu e-mail" required />
+        </div>
+
+        <div class="form-group">
+          <input type="tel" name="Telefone" placeholder="Seu telefone com DDD" required />
+        </div>
+
+        <div class="form-group">
+          <label style="display: block; margin-bottom: 12px; text-align: left; color: #555;">Como prefere o contato?</label>
+          <div style="text-align: left;">
+            <div style="margin-bottom: 10px; display: flex; align-items: center;">
+              <input type="checkbox" id="pref-email" name="Preferencia" value="E-mail" style="width: 16px; height: 16px; margin-right: 8px;"/>
+              <label for="pref-email" style="color: #555;">E-mail</label>
+            </div>
+            <div style="display: flex; align-items: center;">
+              <input type="checkbox" id="pref-whatsapp" name="Preferencia" value="WhatsApp" style="width: 16px; height: 16px; margin-right: 8px;"/>
+              <label for="pref-whatsapp" style="color: #555;">WhatsApp</label>
+            </div>
+          </div>
+        </div>
+
+        <button type="submit" class="botao">Quero participar</button>
+      </form>
+
     </div>
-    <h2>Faça parte da revolução pet</h2>
-    <div class="formulario__conteudo">
 
-      <div class="formulario__info">
-        <form class="formulario__preencher" action="https://formsubmit.co/roblesthiaguinho@gmail.com" method="POST">
-          <h2>Cadastre-se</h2>
-
-          <div class="form-group">
-            <select name="Perfil" required>
-              <option value="">Selecione seu perfil</option>
-              <option value="tutor">Sou tutor</option>
-              <option value="petshop">Sou um pet shop</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <input type="text" name="Nome" placeholder="Nome Completo" required />
-          </div>
-
-          <div class="form-group">
-            <input type="email" name="Email" placeholder="Seu e-mail" required />
-          </div>
-
-          <button type="submit" class="botao">Quero participar</button>
-        </form>
-
-      </div>
-
-      <div class="formulario__imagens">
-        <img src="assest/imgs/lar.png" alt="Ilustração" />
-      </div>
+    <div class="formulario__imagens">
+      <img src="assest/imgs/lar.png" alt="Ilustração" />
     </div>
-  </section>
+
+  </div>
+</section>
   <div class="divisor"></div>
   <img src="assest/imgs/Vector 9.png " alt="" class="divisor__img">
   <!-- <section class="depoimentos">
